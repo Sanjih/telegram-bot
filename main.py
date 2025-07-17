@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 TOKEN = os.getenv("8092994458:AAEpS4IhMekvUD5LNGiDxqy4qC9UQ0HfSZE")
-WEBHOOK_URL = os.getenv("https://vintsy.onrender.com/webhook")
+WEBHOOK_URL = os.getenv("https://telegram-bot-nk3n.onrender.com/webhook")
 
 app = Flask(__name__)
 
