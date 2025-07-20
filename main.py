@@ -3,8 +3,8 @@ from flask import Flask, request, abort
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = os.getenv("8092994458:AAHIlUdlfh2E06VaXy6826Db0KH4KAstn6E")
-WEBHOOK_URL = os.getenv("WEBHOOK_URL")
+TOKEN = "8092994458:AAHI1Ud1fh2E06VaXy6826Db0KH4KAstn6E"
+WEBHOOK_URL = os.getenv("https://web-production-760a2.up.railway.app/webhook")
 
 app = Flask(__name__)
 
