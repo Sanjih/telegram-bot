@@ -18,11 +18,7 @@ application.add_handler(CommandHandler("start", start))
 def webhook():
     json_data = request.get_json(force=True)
     update = Update.de_json(json_data, application.bot)
+
+    # Lance la mise à jour (async) dans un loop synchrone
     asyncio.run(application.process_update(update))
     return "ok", 200
-
-if __name__ == "__main__":
-    asyncio.run(application.initialize())
-    asyncio.run(application.bot.set_webhook(WEBHOOK_URL))
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
