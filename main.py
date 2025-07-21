@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 TOKEN = "8092994458:AAHI1Ud1fh2E06VaXy6826Db0KH4KAstn6E"         # ← ton TOKEN exact
-WEBHOOK_URL = "https://web-production-760a2.up.railway.app/webhook"  # ← ton URL Railway
+WEBHOOK_URL = "https://vintsy.onrender.com/webhook"  # ← ton URL Railway
 
 app = Flask(__name__)
 
